@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="منصة عربية لتعلم تطوير الويب باستخدام HTML وCSS وBootstrap">
+  <title>الرئيسية</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header py-4 shadow-sm">
+  <div class="container">
+    <div class="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-3">
+      <div>
+        <h1 class="brand-title h3 mb-1">أكاديمية الويب الحديثة</h1>
+        <p class="mb-0 opacity-75">تعلم • طبّق • طوّر مهاراتك</p>
+      </div>
+      <nav class="nav nav-pills justify-content-center flex-wrap">
+        <a class="nav-link active" href="../index/index.html">الرئيسية</a>
+<a class="nav-link" href="../courses/courses.html">الدورات</a>
+<a class="nav-link" href="../dashboard/dashboard.html">لوحة التحكم</a>
+<a class="nav-link" href="../profile/profile.html">الملف الشخصي</a>
+<a class="nav-link" href="../settings/settings.html">الإعدادات</a>
+<a class="nav-link" href="../subscribe/subscribe.html">الاشتراك</a>
+<a class="nav-link" href="../search/search.html">البحث</a>
+<a class="nav-link" href="../contact/contact.html">تواصل معنا</a>
+      </nav>
+    </div>
+  </div>
+</header>
+<main class="container py-5">
+
+<section class="row g-4 align-items-center mb-4">
+  <div class="col-lg-7">
+    <div class="card section-card h-100">
+      <div class="card-body p-4 p-lg-5">
+        <span class="badge rounded-pill bg-brand mb-3">مسارات تدريبية عملية</span>
+        <h2 class="display-6 fw-bold text-brand">ابدأ رحلتك نحو تطوير الويب باحتراف</h2>
+        <p class="lead text-secondary">محتوى تدريبي منظّم يجمع بين المعرفة والتطبيق، ويساعدك على بناء صفحات ومشاريع ويب حديثة بخطوات واضحة.</p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="../courses/courses.html" class="btn btn-brand">استكشف الدورات</a>
+          <a href="../profile/profile.html" class="btn btn-outline-secondary">الملف الشخصي</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-5">
+    <img class="hero-img shadow-sm" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="حاسوب يعرض أكواد برمجية">
+  </div>
+</section>
+
+<section class="card section-card mb-4">
+  <div class="card-header py-3">مقالات مختصرة</div>
+  <div class="card-body">
+    <div class="row g-3">
+      <article class="col-md-6">
+        <div class="alert alert-light border h-100 mb-0">
+          <h3 class="h5">أساسيات بناء صفحات الويب</h3>
+          <p class="mb-0">تعرّف على العناصر الأساسية لبناء صفحات واضحة، منظمة وسهلة الاستخدام على مختلف الأجهزة.</p>
+        </div>
+      </article>
+      <article class="col-md-6">
+        <div class="alert alert-light border h-100 mb-0">
+          <h3 class="h5">التعلّم بالممارسة</h3>
+          <p class="mb-0">طبّق ما تتعلمه من خلال تمارين قصيرة ومشاريع متدرجة تساعدك على تثبيت المهارات وتحسين مستواك.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="card section-card mb-4">
+  <div class="card-header py-3">درس مرئي مختار</div>
+  <div class="card-body">
+    <p class="text-secondary">شرح مرئي يساعدك على فهم تصميم الواجهات الحديثة وتطبيقها بطريقة عملية.</p>
+    <iframe class="video-frame" src="https://www.youtube.com/embed/-qfEOE4vtxE" title="Bootstrap 5 Tutorial" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section class="card section-card">
+  <div class="card-header py-3">تواصل سريع</div>
+  <div class="card-body">
+    <form class="row g-3">
+      <div class="col-md-6"><label class="form-label" for="quick-name">الاسم</label><input class="form-control" id="quick-name" required></div>
+      <div class="col-md-6"><label class="form-label" for="quick-email">البريد الإلكتروني</label><input type="email" class="form-control" id="quick-email" required></div>
+      <div class="col-12"><label class="form-label" for="quick-message">رسالتك</label><textarea class="form-control" id="quick-message" rows="4"></textarea></div>
+      <div class="col-12"><button class="btn btn-brand" type="submit">إرسال</button></div>
+    </form>
+  </div>
+</section>
+
+</main>
+<footer class="py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 text-center text-md-start">
+    <span>© 2026 منصة تطوير الويب</span>
+    <span>أكاديمية الويب الحديثة</span>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

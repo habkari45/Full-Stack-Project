@@ -1,0 +1,82 @@
+:root{
+  --brand:#665f9b;
+  --brand-dark:#4d4779;
+  --brand-soft:#f0eff9;
+  --ink:#263238;
+  --muted:#667085;
+  --page:#f7f8fc;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Tahoma,Arial,sans-serif;
+  background:linear-gradient(180deg,#f8f9fd 0%,#ffffff 100%);
+  color:var(--ink);
+  min-height:100vh;
+}
+.site-header{
+  background:linear-gradient(135deg,var(--brand),#7d76b4);
+  color:#fff;
+}
+.brand-title{font-weight:800;letter-spacing:.2px}
+.nav-pills .nav-link{
+  color:#fff;
+  border:1px solid rgba(255,255,255,.28);
+  margin:.15rem;
+}
+.nav-pills .nav-link:hover,.nav-pills .nav-link.active{
+  background:#fff;
+  color:var(--brand-dark);
+}
+.section-card{
+  border:0;
+  border-radius:1rem;
+  box-shadow:0 .35rem 1.1rem rgba(42,49,66,.09);
+}
+.section-card .card-header{
+  background:var(--brand-soft);
+  color:var(--brand-dark);
+  border-bottom:0;
+  font-weight:700;
+}
+.btn-brand{
+  background:var(--brand);
+  color:#fff;
+  border-color:var(--brand);
+}
+.btn-brand:hover{background:var(--brand-dark);color:#fff;border-color:var(--brand-dark)}
+.text-brand{color:var(--brand-dark)!important}
+.bg-brand{background:var(--brand)!important;color:#fff}
+.border-brand{border-color:#c8c4e6!important}
+.hero-img{
+  width:100%;
+  height:340px;
+  object-fit:cover;
+  border-radius:1rem;
+}
+.profile-photo{
+  width:190px;
+  height:190px;
+  object-fit:cover;
+  object-position:center 30%;
+}
+.stat-card{
+  border:0;
+  border-radius:1rem;
+  min-height:135px;
+}
+.scroll-box{max-height:235px;overflow-y:auto}
+.soft-panel{background:var(--brand-soft);border:1px solid #dddaf0;border-radius:1rem}
+.table thead th{white-space:nowrap}
+footer{background:#25243a;color:#ececf5}
+footer a{color:#fff}
+iframe.video-frame{width:100%;aspect-ratio:16/9;border:0;border-radius:1rem}
+.list-group-item.active{
+  background:var(--brand);
+  border-color:var(--brand);
+}
+.page-link{color:var(--brand-dark)}
+.active>.page-link,.page-link.active{background:var(--brand);border-color:var(--brand)}
+@media (max-width: 767px){
+  .hero-img{height:230px}
+  .profile-photo{width:145px;height:145px}
+}
