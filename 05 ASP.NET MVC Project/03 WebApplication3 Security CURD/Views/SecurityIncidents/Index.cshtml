@@ -1,0 +1,55 @@
+﻿@model IEnumerable<SecurityIncident>
+
+<div class="container">
+
+    <h1>Security Incidents</h1>
+
+    <div class="text-end">
+        <a asp-action="Create" class="btn btn-primary">New Incident</a>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Incident Type</th>
+                <th>Location</th>
+                <th>Incident Date</th>
+                <th>Status</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var incident in Model)
+            {
+                <tr>
+                    <td>@incident.Id</td>
+                    <td>@incident.Title</td>
+                    <td>@incident.IncidentType</td>
+                    <td>@incident.Location</td>
+                    <td>@incident.IncidentDate</td>
+                    <td>@incident.Status</td>
+                    <td>@incident.Description</td>
+
+                    <td>
+                        <a asp-action="Edit"
+                           asp-route-Id="@incident.Id"
+                           class="btn btn-warning">
+                            Edit
+                        </a>
+
+                        <a asp-action="Delete"
+                           asp-route-Id="@incident.Id"
+                           class="btn btn-danger">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
