@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\template\401.html" />
+    <Content Remove="wwwroot\template\404.html" />
+    <Content Remove="wwwroot\template\500.html" />
+    <Content Remove="wwwroot\template\assets\demo\chart-area-demo.js" />
+    <Content Remove="wwwroot\template\assets\demo\chart-bar-demo.js" />
+    <Content Remove="wwwroot\template\assets\demo\chart-pie-demo.js" />
+    <Content Remove="wwwroot\template\assets\demo\datatables-demo.js" />
+    <Content Remove="wwwroot\template\assets\img\error-404-monochrome.svg" />
+    <Content Remove="wwwroot\template\charts.html" />
+    <Content Remove="wwwroot\template\css\styles.css" />
+    <Content Remove="wwwroot\template\index - Copy.html" />
+    <Content Remove="wwwroot\template\index.html" />
+    <Content Remove="wwwroot\template\js\datatables-simple-demo.js" />
+    <Content Remove="wwwroot\template\js\scripts.js" />
+    <Content Remove="wwwroot\template\layout-sidenav-light.html" />
+    <Content Remove="wwwroot\template\layout-static.html" />
+    <Content Remove="wwwroot\template\login.html" />
+    <Content Remove="wwwroot\template\password.html" />
+    <Content Remove="wwwroot\template\register.html" />
+    <Content Remove="wwwroot\template\tables.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\template\401.html" />
+    <None Include="wwwroot\template\404.html" />
+    <None Include="wwwroot\template\500.html" />
+    <None Include="wwwroot\template\assets\demo\chart-area-demo.js" />
+    <None Include="wwwroot\template\assets\demo\chart-bar-demo.js" />
+    <None Include="wwwroot\template\assets\demo\chart-pie-demo.js" />
+    <None Include="wwwroot\template\assets\demo\datatables-demo.js" />
+    <None Include="wwwroot\template\assets\img\error-404-monochrome.svg" />
+    <None Include="wwwroot\template\charts.html" />
+    <None Include="wwwroot\template\css\styles.css" />
+    <None Include="wwwroot\template\index - Copy.html" />
+    <None Include="wwwroot\template\index.html" />
+    <None Include="wwwroot\template\js\datatables-simple-demo.js" />
+    <None Include="wwwroot\template\js\scripts.js" />
+    <None Include="wwwroot\template\layout-sidenav-light.html" />
+    <None Include="wwwroot\template\layout-static.html" />
+    <None Include="wwwroot\template\login.html" />
+    <None Include="wwwroot\template\password.html" />
+    <None Include="wwwroot\template\register.html" />
+    <None Include="wwwroot\template\tables.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.31" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.31" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.31">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

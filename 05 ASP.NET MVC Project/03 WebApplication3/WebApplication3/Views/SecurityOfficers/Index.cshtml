@@ -1,0 +1,57 @@
+﻿@model IEnumerable<SecurityOfficer>
+
+<div class="container">
+
+    <h1>Security Officers</h1>
+
+    <div class="text-end mb-3">
+        <a asp-action="Create" class="btn btn-primary">
+            New Security Officer
+        </a>
+    </div>
+
+    <table class="table table-striped">
+
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Employee Number</th>
+                <th>Shift</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            @foreach (var officer in Model)
+            {
+                <tr>
+                    <td>@officer.Id</td>
+                    <td>@officer.Name</td>
+                    <td>@officer.EmployeeNumber</td>
+                    <td>@officer.Shift</td>
+                    <td>@officer.Phone</td>
+
+                    <td>
+                        <a asp-action="Edit"
+                           asp-route-id="@officer.Id"
+                           class="btn btn-warning">
+                            Edit
+                        </a>
+
+                        <a asp-action="Delete"
+                           asp-route-id="@officer.Id"
+                           class="btn btn-danger">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</div>

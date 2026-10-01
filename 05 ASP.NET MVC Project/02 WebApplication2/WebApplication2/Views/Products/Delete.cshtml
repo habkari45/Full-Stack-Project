@@ -1,0 +1,34 @@
+﻿@model WebApplication2.Models.Product
+
+<h1>Delete Product</h1>
+
+<h3>Are you sure you want to delete this product?</h3>
+
+<div class="mb-3">
+    <strong>Product Name:</strong>
+    @Model.ProductName
+</div>
+
+<div class="mb-3">
+    <strong>Price:</strong>
+    @Model.Price
+</div>
+
+<div class="mb-3">
+    <strong>Quantity:</strong>
+    @Model.Quantity
+</div>
+
+<form asp-action="Delete" method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <button type="submit" class="btn btn-danger">
+        Delete
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Back
+    </a>
+
+</form>
