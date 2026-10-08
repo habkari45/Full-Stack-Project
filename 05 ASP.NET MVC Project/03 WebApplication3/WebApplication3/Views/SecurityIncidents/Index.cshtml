@@ -1,4 +1,5 @@
-﻿@model IEnumerable<SecurityIncident>
+﻿@using WebApplication3.Dtos
+@model IEnumerable<SecurityIncidentDto>
 
 <div class="container">
 
@@ -20,6 +21,7 @@
                 <th>Incident Date</th>
                 <th>Status</th>
                 <th>Description</th>
+                <th>Security Officer</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -35,14 +37,17 @@
                     <td>@incident.IncidentDate</td>
                     <td>@incident.Status</td>
                     <td>@incident.Description</td>
+                    <td>@incident.SecurityOfficerName</td>
 
                     <td>
-                        <a href="/SecurityIncidents/Edit/@incident.Id"
+                        <a asp-action="Edit"
+                           asp-route-id="@incident.Id"
                            class="btn btn-warning">
                             Edit
                         </a>
 
-                        <a href="/SecurityIncidents/Delete/@incident.Id"
+                        <a asp-action="Delete"
+                           asp-route-id="@incident.Id"
                            class="btn btn-danger">
                             Delete
                         </a>

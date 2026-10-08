@@ -45,6 +45,9 @@ namespace WebApplication3.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("SecurityOfficerId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -58,6 +61,8 @@ namespace WebApplication3.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("SecurityOfficerId");
 
                     b.HasIndex("Uuid")
                         .IsUnique();
@@ -131,6 +136,20 @@ namespace WebApplication3.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("WebApplication3.Models.SecurityIncident", b =>
+                {
+                    b.HasOne("WebApplication3.Models.SecurityOfficer", "SecurityOfficer")
+                        .WithMany("SecurityIncidents")
+                        .HasForeignKey("SecurityOfficerId");
+
+                    b.Navigation("SecurityOfficer");
+                });
+
+            modelBuilder.Entity("WebApplication3.Models.SecurityOfficer", b =>
+                {
+                    b.Navigation("SecurityIncidents");
                 });
 #pragma warning restore 612, 618
         }

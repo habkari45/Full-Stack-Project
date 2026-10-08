@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using WebApplication3.Data;
+using WebApplication3.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +18,8 @@ builder.Services.AddAuthentication(
         options.LoginPath = "/Accounts/Login";
         options.AccessDeniedPath = "/Accounts/Login";
     });
-
+builder.Services.AddScoped<ISecurityIncidentRepository, SecurityIncidentRepository>();
+builder.Services.AddScoped<ISecurityOfficerRepository, SecurityOfficerRepository>();
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())

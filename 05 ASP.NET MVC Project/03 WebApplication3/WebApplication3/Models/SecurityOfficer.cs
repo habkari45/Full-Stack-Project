@@ -16,5 +16,7 @@ namespace WebApplication3.Models
         public string Shift { get; set; }
 
         public string Phone { get; set; }
+
+        public ICollection<SecurityIncident>? SecurityIncidents { get; set; }
     }
 }

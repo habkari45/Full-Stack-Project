@@ -1,26 +1,30 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication3.Data;
 using WebApplication3.Models;
+using WebApplication3.Repositories;
 
 namespace WebApplication3.Controllers
 {
     [Authorize]
     public class SecurityOfficersController : Controller
     {
-        private readonly AppDbContext _db;
+        private readonly ISecurityOfficerRepository _securityOfficerRepository;
 
-        public SecurityOfficersController(AppDbContext db)
+        public SecurityOfficersController(
+            ISecurityOfficerRepository securityOfficerRepository)
         {
-            _db = db;
+            _securityOfficerRepository = securityOfficerRepository;
         }
 
-        public IActionResult Index()
+
+        public async Task<IActionResult> Index()
         {
-            IEnumerable<SecurityOfficer> officers = _db.SecurityOfficers.ToList();
+            var officers =
+                await _securityOfficerRepository.GetAllSecurityOfficersAsync();
 
             return View(officers);
         }
+
 
         [HttpGet]
         public IActionResult Create()
@@ -28,43 +32,74 @@ namespace WebApplication3.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Create(SecurityOfficer officer)
-        {
-            _db.SecurityOfficers.Add(officer);
-            _db.SaveChanges();
 
-            return RedirectToAction("Index");
-        }
-        [HttpGet]
-        public IActionResult Edit(int id)
+        [HttpPost]
+        public async Task<IActionResult> Create(SecurityOfficer officer)
         {
-            SecurityOfficer officer = _db.SecurityOfficers.Find(id);
+            if (ModelState.IsValid)
+            {
+                await _securityOfficerRepository
+                    .AddSecurityOfficerAsync(officer);
+
+                return RedirectToAction("Index");
+            }
 
             return View(officer);
         }
 
-        [HttpPost]
-        public IActionResult Edit(SecurityOfficer officer)
-        {
-            _db.SecurityOfficers.Update(officer);
-            _db.SaveChanges();
 
-            return RedirectToAction("Index");
-        }
         [HttpGet]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Edit(int id)
         {
-            SecurityOfficer officer = _db.SecurityOfficers.Find(id);
+            var officer =
+                await _securityOfficerRepository
+                    .GetSecurityOfficerByIdAsync(id);
+
+            if (officer == null)
+            {
+                return NotFound();
+            }
 
             return View(officer);
         }
 
+
         [HttpPost]
-        public IActionResult Delete(SecurityOfficer officer)
+        public async Task<IActionResult> Edit(SecurityOfficer officer)
         {
-            _db.SecurityOfficers.Remove(officer);
-            _db.SaveChanges();
+            if (ModelState.IsValid)
+            {
+                await _securityOfficerRepository
+                    .UpdateSecurityOfficerAsync(officer);
+
+                return RedirectToAction("Index");
+            }
+
+            return View(officer);
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var officer =
+                await _securityOfficerRepository
+                    .GetSecurityOfficerByIdAsync(id);
+
+            if (officer == null)
+            {
+                return NotFound();
+            }
+
+            return View(officer);
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(SecurityOfficer officer)
+        {
+            await _securityOfficerRepository
+                .DeleteSecurityOfficerAsync(officer.Id);
 
             return RedirectToAction("Index");
         }

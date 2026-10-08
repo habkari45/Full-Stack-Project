@@ -35,5 +35,9 @@ namespace WebApplication3.Models
         [DisplayName("Description")]
         [Required(ErrorMessage = "Description is required.")]
         public string Description { get; set; }
+
+        public int? SecurityOfficerId { get; set; }
+
+        public SecurityOfficer? SecurityOfficer { get; set; }
     }
 }
