@@ -1,63 +1,45 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using WebApplication3.Dtos;
-using WebApplication3.Models;
-using WebApplication3.Repositories;
+using WebApplication3.Application.DTOs;
+using WebApplication3.Application.Services.Base;
 
 namespace WebApplication3.Controllers
 {
     [Authorize]
     public class SecurityIncidentsController : Controller
     {
-        private readonly ISecurityIncidentRepository _securityIncidentRepository;
-        private readonly ISecurityOfficerRepository _securityOfficerRepository;
+        private readonly ISecurityIncidentService _securityIncidentService;
 
         public SecurityIncidentsController(
-            ISecurityIncidentRepository securityIncidentRepository,
-            ISecurityOfficerRepository securityOfficerRepository)
+            ISecurityIncidentService securityIncidentService)
         {
-            _securityIncidentRepository = securityIncidentRepository;
-            _securityOfficerRepository = securityOfficerRepository;
+            _securityIncidentService = securityIncidentService;
         }
 
 
+        // GET ALL
         public async Task<IActionResult> Index()
         {
-            var securityIncidents =
-                await _securityIncidentRepository.GetAllSecurityIncidentsAsync();
-
-            IEnumerable<SecurityIncidentDto> incidents =
-                securityIncidents.Select(i => new SecurityIncidentDto
-                {
-                    //Mapping SecurityIncident to SecurityIncidentDto
-                    Id = i.Id,
-                    Title = i.Title,
-                    IncidentType = i.IncidentType,
-                    Location = i.Location,
-                    IncidentDate = i.IncidentDate,
-                    Status = i.Status,
-                    Description = i.Description,
-                    SecurityOfficerName =
-                        i.SecurityOfficer != null
-                        ? i.SecurityOfficer.Name
-                        : ""
-                }).ToList();
+            var incidents =
+                await _securityIncidentService.GetAllSecurityIncidents();
 
             return View(incidents);
         }
 
 
+        // LOAD SECURITY OFFICERS
         private async Task loadSecurityOfficers()
         {
             var securityOfficers =
-                await _securityOfficerRepository.GetAllSecurityOfficersAsync();
+                await _securityIncidentService.GetAllSecurityOfficers();
 
             ViewBag.SecurityOfficers =
                 new SelectList(securityOfficers, "Id", "Name");
         }
 
 
+        // CREATE GET
         [HttpGet]
         public async Task<IActionResult> Create()
         {
@@ -67,26 +49,15 @@ namespace WebApplication3.Controllers
         }
 
 
+        // CREATE POST
         [HttpPost]
         public async Task<IActionResult> Create(
             SecurityIncidentCreateDto incidentDTO)
         {
             if (ModelState.IsValid)
             {
-                //Mapping SecurityIncidentCreateDto to SecurityIncident
-                var incident = new SecurityIncident
-                {
-                    Title = incidentDTO.Title,
-                    IncidentType = incidentDTO.IncidentType,
-                    Location = incidentDTO.Location,
-                    IncidentDate = incidentDTO.IncidentDate,
-                    Status = incidentDTO.Status,
-                    Description = incidentDTO.Description,
-                    SecurityOfficerId = incidentDTO.SecurityOfficerId
-                };
-
-                await _securityIncidentRepository
-                    .AddSecurityIncidentAsync(incident);
+                await _securityIncidentService
+                    .AddSecurityIncident(incidentDTO);
 
                 return RedirectToAction("Index");
             }
@@ -101,6 +72,7 @@ namespace WebApplication3.Controllers
         }
 
 
+        // EDIT GET
         [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
@@ -111,58 +83,35 @@ namespace WebApplication3.Controllers
 
             await loadSecurityOfficers();
 
-            var incident =
-                await _securityIncidentRepository
-                    .GetSecurityIncidentByIdAsync(id.Value);
+            var incidentDTO =
+                await _securityIncidentService
+                    .GetSecurityIncidentById(id.Value);
 
-            if (incident == null)
+            if (incidentDTO == null)
             {
                 return NotFound();
             }
-
-            var incidentDTO = new SecurityIncidentUpdateDto
-            {
-                Id = incident.Id,
-                Title = incident.Title,
-                IncidentType = incident.IncidentType,
-                Location = incident.Location,
-                IncidentDate = incident.IncidentDate,
-                Status = incident.Status,
-                Description = incident.Description,
-                SecurityOfficerId = incident.SecurityOfficerId
-            };
 
             return View(incidentDTO);
         }
 
 
+        // EDIT POST
         [HttpPost]
         public async Task<IActionResult> Edit(
             SecurityIncidentUpdateDto incidentDTO)
         {
             if (ModelState.IsValid)
             {
-                var incident =
-                    await _securityIncidentRepository
-                        .GetSecurityIncidentByIdAsync(incidentDTO.Id);
-
-                if (incident == null)
+                try
+                {
+                    await _securityIncidentService
+                        .UpdateSecurityIncident(incidentDTO);
+                }
+                catch (KeyNotFoundException)
                 {
                     return NotFound();
                 }
-
-                //Mapping SecurityIncidentUpdateDto to SecurityIncident
-                incident.Title = incidentDTO.Title;
-                incident.IncidentType = incidentDTO.IncidentType;
-                incident.Location = incidentDTO.Location;
-                incident.IncidentDate = incidentDTO.IncidentDate;
-                incident.Status = incidentDTO.Status;
-                incident.Description = incidentDTO.Description;
-                incident.SecurityOfficerId =
-                    incidentDTO.SecurityOfficerId;
-
-                await _securityIncidentRepository
-                    .UpdateSecurityIncidentAsync(incident);
 
                 return RedirectToAction("Index");
             }
@@ -177,6 +126,7 @@ namespace WebApplication3.Controllers
         }
 
 
+        // DELETE GET
         [HttpGet]
         public async Task<IActionResult> Delete(int? id)
         {
@@ -185,31 +135,20 @@ namespace WebApplication3.Controllers
                 return NotFound();
             }
 
-            var incident =
-                await _securityIncidentRepository
-                    .GetSecurityIncidentByIdAsync(id.Value);
+            var incidentDTO =
+                await _securityIncidentService
+                    .GetSecurityIncidentById(id.Value);
 
-            if (incident == null)
+            if (incidentDTO == null)
             {
                 return NotFound();
             }
-
-            var incidentDTO = new SecurityIncidentUpdateDto
-            {
-                Id = incident.Id,
-                Title = incident.Title,
-                IncidentType = incident.IncidentType,
-                Location = incident.Location,
-                IncidentDate = incident.IncidentDate,
-                Status = incident.Status,
-                Description = incident.Description,
-                SecurityOfficerId = incident.SecurityOfficerId
-            };
 
             return View(incidentDTO);
         }
 
 
+        // DELETE POST
         [HttpPost]
         [ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirm(int? id)
@@ -219,17 +158,15 @@ namespace WebApplication3.Controllers
                 return NotFound();
             }
 
-            var incident =
-                await _securityIncidentRepository
-                    .GetSecurityIncidentByIdAsync(id.Value);
-
-            if (incident == null)
+            try
+            {
+                await _securityIncidentService
+                    .DeleteSecurityIncident(id.Value);
+            }
+            catch (KeyNotFoundException)
             {
                 return NotFound();
             }
-
-            await _securityIncidentRepository
-                .DeleteSecurityIncidentAsync(incident.Id);
 
             return RedirectToAction("Index");
         }

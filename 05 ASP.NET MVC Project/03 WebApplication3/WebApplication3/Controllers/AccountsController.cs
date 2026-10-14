@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
-using WebApplication3.Data;
+using WebApplication3.Infrastructure.Data;
 
 namespace WebApplication3.Controllers
 {

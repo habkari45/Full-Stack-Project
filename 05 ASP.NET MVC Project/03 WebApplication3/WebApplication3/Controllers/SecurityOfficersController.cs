@@ -1,31 +1,33 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication3.Models;
-using WebApplication3.Repositories;
+using WebApplication3.Application.DTOs;
+using WebApplication3.Application.Services.Base;
 
 namespace WebApplication3.Controllers
 {
     [Authorize]
     public class SecurityOfficersController : Controller
     {
-        private readonly ISecurityOfficerRepository _securityOfficerRepository;
+        private readonly ISecurityOfficerService _securityOfficerService;
 
         public SecurityOfficersController(
-            ISecurityOfficerRepository securityOfficerRepository)
+            ISecurityOfficerService securityOfficerService)
         {
-            _securityOfficerRepository = securityOfficerRepository;
+            _securityOfficerService = securityOfficerService;
         }
 
 
+        // GET ALL
         public async Task<IActionResult> Index()
         {
             var officers =
-                await _securityOfficerRepository.GetAllSecurityOfficersAsync();
+                await _securityOfficerService.GetAllSecurityOfficers();
 
             return View(officers);
         }
 
 
+        // CREATE GET
         [HttpGet]
         public IActionResult Create()
         {
@@ -33,73 +35,95 @@ namespace WebApplication3.Controllers
         }
 
 
+        // CREATE POST
         [HttpPost]
-        public async Task<IActionResult> Create(SecurityOfficer officer)
+        public async Task<IActionResult> Create(
+            SecurityOfficerCreateDto officerDTO)
         {
             if (ModelState.IsValid)
             {
-                await _securityOfficerRepository
-                    .AddSecurityOfficerAsync(officer);
+                await _securityOfficerService
+                    .AddSecurityOfficer(officerDTO);
 
                 return RedirectToAction("Index");
             }
 
-            return View(officer);
+            return View(officerDTO);
         }
 
 
+        // EDIT GET
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
-            var officer =
-                await _securityOfficerRepository
-                    .GetSecurityOfficerByIdAsync(id);
+            var officerDTO =
+                await _securityOfficerService
+                    .GetSecurityOfficerById(id);
 
-            if (officer == null)
+            if (officerDTO == null)
             {
                 return NotFound();
             }
 
-            return View(officer);
+            return View(officerDTO);
         }
 
 
+        // EDIT POST
         [HttpPost]
-        public async Task<IActionResult> Edit(SecurityOfficer officer)
+        public async Task<IActionResult> Edit(
+            SecurityOfficerUpdateDto officerDTO)
         {
             if (ModelState.IsValid)
             {
-                await _securityOfficerRepository
-                    .UpdateSecurityOfficerAsync(officer);
+                try
+                {
+                    await _securityOfficerService
+                        .UpdateSecurityOfficer(officerDTO);
+                }
+                catch (KeyNotFoundException)
+                {
+                    return NotFound();
+                }
 
                 return RedirectToAction("Index");
             }
 
-            return View(officer);
+            return View(officerDTO);
         }
 
 
+        // DELETE GET
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-            var officer =
-                await _securityOfficerRepository
-                    .GetSecurityOfficerByIdAsync(id);
+            var officerDTO =
+                await _securityOfficerService
+                    .GetSecurityOfficerById(id);
 
-            if (officer == null)
+            if (officerDTO == null)
             {
                 return NotFound();
             }
 
-            return View(officer);
+            return View(officerDTO);
         }
 
 
+        // DELETE POST
         [HttpPost]
-        public async Task<IActionResult> Delete(SecurityOfficer officer)
+        [ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirm(int id)
         {
-            await _securityOfficerRepository
-                .DeleteSecurityOfficerAsync(officer.Id);
+            try
+            {
+                await _securityOfficerService
+                    .DeleteSecurityOfficer(id);
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound();
+            }
 
             return RedirectToAction("Index");
         }

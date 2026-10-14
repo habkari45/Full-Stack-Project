@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using WebApplication3.Models;
-using WebApplication3.Data;
+using WebApplication3.Domain.Models;
+using WebApplication3.Infrastructure.Data;
 
 namespace WebApplication3.Controllers
 {

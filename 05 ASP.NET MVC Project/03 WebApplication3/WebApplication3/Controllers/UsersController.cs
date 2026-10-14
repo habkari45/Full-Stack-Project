@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using WebApplication3.Data;
-using WebApplication3.Models;
+using WebApplication3.Infrastructure.Data;
+using WebApplication3.Domain.Models;
 
 namespace WebApplication3.Controllers
 {

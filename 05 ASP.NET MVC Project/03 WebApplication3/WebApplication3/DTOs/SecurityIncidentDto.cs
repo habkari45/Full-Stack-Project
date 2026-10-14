@@ -1,4 +1,4 @@
-﻿namespace WebApplication3.Dtos
+﻿namespace WebApplication3.Application.DTOs
 {
     public class SecurityIncidentDto
     {
