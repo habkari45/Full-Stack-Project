@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="WebApplication3.API/WebApplication3.API.csproj" Id="2b17c0f2-3cfc-4ac1-bdce-f0b5da1243ab" />
+  <Project Path="WebApplication3.Application/WebApplication3.Application.csproj" Id="cf14aaeb-e95d-4aad-a62a-d03ee4d0b478" />
+  <Project Path="WebApplication3.Domain/WebApplication3.Domain.csproj" Id="27c2528c-4b58-4531-8a83-f158092933a2" />
+  <Project Path="WebApplication3.Infrastructure/WebApplication3.Infrastructure.csproj" Id="864ea99b-bc1c-40d9-abab-3acd2d787b18" />
+  <Project Path="WebApplication3/WebApplication3.csproj" />
+</Solution>
