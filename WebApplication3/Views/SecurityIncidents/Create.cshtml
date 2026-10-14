@@ -1,0 +1,75 @@
+﻿@using WebApplication3.Application.DTOs
+@model SecurityIncidentCreateDto
+
+<div class="container">
+
+    <h1>Create Security Incident</h1>
+
+    <form asp-action="Create" method="post">
+
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label"></label>
+            <input asp-for="Title" class="form-control" />
+            <span asp-validation-for="Title" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="IncidentType" class="form-label"></label>
+            <input asp-for="IncidentType" class="form-control" />
+            <span asp-validation-for="IncidentType" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Location" class="form-label"></label>
+            <input asp-for="Location" class="form-control" />
+            <span asp-validation-for="Location" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="IncidentDate" class="form-label"></label>
+            <input asp-for="IncidentDate"
+                   type="datetime-local"
+                   class="form-control" />
+            <span asp-validation-for="IncidentDate" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Status" class="form-label"></label>
+            <input asp-for="Status" class="form-control" />
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label"></label>
+            <input asp-for="Description" class="form-control" />
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="SecurityOfficerId" class="form-label">
+                Security Officer
+            </label>
+
+            <select asp-for="SecurityOfficerId"
+                    class="form-control"
+                    asp-items="ViewBag.SecurityOfficers">
+
+                <option value="">-- Select Security Officer --</option>
+
+            </select>
+
+            <span asp-validation-for="SecurityOfficerId"
+                  class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            Create
+        </button>
+
+        <a asp-action="Index" class="btn btn-secondary">
+            Back
+        </a>
+
+    </form>
+
+</div>
