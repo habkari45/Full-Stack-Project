@@ -15,6 +15,7 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Image</th>
                 <th>Title</th>
                 <th>Incident Type</th>
                 <th>Location</th>
@@ -31,6 +32,22 @@
             {
                 <tr>
                     <td>@incident.Id</td>
+
+                    <td>
+                        @if (!string.IsNullOrEmpty(incident.ImageUrl))
+                        {
+                            <img src="@incident.ImageUrl"
+                                 alt="Incident Image"
+                                 width="60"
+                                 height="60"
+                                 style="object-fit: cover; border-radius: 8px;" />
+                        }
+                        else
+                        {
+                            <span>No Image</span>
+                        }
+                    </td>
+
                     <td>@incident.Title</td>
                     <td>@incident.IncidentType</td>
                     <td>@incident.Location</td>

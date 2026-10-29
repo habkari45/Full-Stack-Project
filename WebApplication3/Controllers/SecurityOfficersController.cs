@@ -9,11 +9,14 @@ namespace WebApplication3.Controllers
     public class SecurityOfficersController : Controller
     {
         private readonly ISecurityOfficerService _securityOfficerService;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
         public SecurityOfficersController(
-            ISecurityOfficerService securityOfficerService)
+            ISecurityOfficerService securityOfficerService,
+            IWebHostEnvironment webHostEnvironment)
         {
             _securityOfficerService = securityOfficerService;
+            _webHostEnvironment = webHostEnvironment;
         }
 
 
@@ -38,18 +41,63 @@ namespace WebApplication3.Controllers
         // CREATE POST
         [HttpPost]
         public async Task<IActionResult> Create(
-            SecurityOfficerCreateDto officerDTO)
+            SecurityOfficerCreateDto officerDTO,
+            IFormFile? imageFile)
         {
-            if (ModelState.IsValid)
+            if (imageFile != null && imageFile.Length > 0)
             {
-                await _securityOfficerService
-                    .AddSecurityOfficer(officerDTO);
+                // Validate image size (5 MB)
+                if (imageFile.Length > 5 * 1024 * 1024)
+                {
+                    ModelState.AddModelError("imageFile",
+                        "Image size must not exceed 5 MB.");
+                }
 
-                return RedirectToAction("Index");
+                // Validate image extension
+                var extension = Path.GetExtension(imageFile.FileName).ToLowerInvariant();
+
+                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+
+                if (!allowedExtensions.Contains(extension))
+                {
+                    ModelState.AddModelError("imageFile",
+                        "Only JPG, JPEG and PNG images are allowed.");
+                }
             }
 
-            return View(officerDTO);
+            if (!ModelState.IsValid)
+            {
+                return View(officerDTO);
+            }
+
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                var webRootPath = _webHostEnvironment.WebRootPath
+                    ?? Path.Combine(_webHostEnvironment.ContentRootPath, "wwwroot");
+
+                var folderPath = Path.Combine(webRootPath, "images", "officers");
+
+                Directory.CreateDirectory(folderPath);
+
+                var extension = Path.GetExtension(imageFile.FileName).ToLowerInvariant();
+
+                var fileName = $"{Guid.NewGuid()}{extension}";
+
+                var filePath = Path.Combine(folderPath, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.CreateNew))
+                {
+                    await imageFile.CopyToAsync(stream);
+                }
+
+                officerDTO.ImageUrl = $"/images/officers/{fileName}";
+            }
+
+            await _securityOfficerService.AddSecurityOfficer(officerDTO);
+
+            return RedirectToAction("Index");
         }
+
 
 
         // EDIT GET
@@ -72,24 +120,87 @@ namespace WebApplication3.Controllers
         // EDIT POST
         [HttpPost]
         public async Task<IActionResult> Edit(
-            SecurityOfficerUpdateDto officerDTO)
+            SecurityOfficerUpdateDto officerDTO,
+            IFormFile? imageFile)
         {
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    await _securityOfficerService
-                        .UpdateSecurityOfficer(officerDTO);
-                }
-                catch (KeyNotFoundException)
-                {
-                    return NotFound();
-                }
+            // Get the current officer
+            var existingOfficer = await _securityOfficerService
+                .GetSecurityOfficerById(officerDTO.Id);
 
-                return RedirectToAction("Index");
+            if (existingOfficer == null)
+            {
+                return NotFound();
             }
 
-            return View(officerDTO);
+            // Keep the current image
+            officerDTO.ImageUrl = existingOfficer.ImageUrl;
+
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                // Validate image size (5 MB)
+                if (imageFile.Length > 5 * 1024 * 1024)
+                {
+                    ModelState.AddModelError("imageFile",
+                        "Image size must not exceed 5 MB.");
+                }
+
+                // Validate image extension
+                var extension = Path.GetExtension(imageFile.FileName)
+                    .ToLowerInvariant();
+
+                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+
+                if (!allowedExtensions.Contains(extension))
+                {
+                    ModelState.AddModelError("imageFile",
+                        "Only JPG, JPEG and PNG images are allowed.");
+                }
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return View(officerDTO);
+            }
+
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                var webRootPath = _webHostEnvironment.WebRootPath
+                    ?? Path.Combine(
+                        _webHostEnvironment.ContentRootPath,
+                        "wwwroot");
+
+                var folderPath = Path.Combine(
+                    webRootPath, "images", "officers");
+
+                Directory.CreateDirectory(folderPath);
+
+                var extension = Path.GetExtension(imageFile.FileName)
+                    .ToLowerInvariant();
+
+                var fileName = $"{Guid.NewGuid()}{extension}";
+
+                var filePath = Path.Combine(folderPath, fileName);
+
+                using (var stream = new FileStream(
+                    filePath, FileMode.CreateNew))
+                {
+                    await imageFile.CopyToAsync(stream);
+                }
+
+                officerDTO.ImageUrl = $"/images/officers/{fileName}";
+            }
+
+            try
+            {
+                await _securityOfficerService
+                    .UpdateSecurityOfficer(officerDTO);
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound();
+            }
+
+            return RedirectToAction("Index");
         }
 
 

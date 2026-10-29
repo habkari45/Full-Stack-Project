@@ -1,6 +1,4 @@
-﻿
-
-namespace WebApplication3.Domain.Models
+﻿namespace WebApplication3.Domain.Models
 {
     public class SecurityOfficer
     {
@@ -15,6 +13,8 @@ namespace WebApplication3.Domain.Models
         public string Shift { get; set; }
 
         public string Phone { get; set; }
+
+        public string? ImageUrl { get; set; }
 
         public ICollection<SecurityIncident>? SecurityIncidents { get; set; }
     }

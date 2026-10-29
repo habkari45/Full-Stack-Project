@@ -5,7 +5,7 @@
 
     <h1>Create Security Incident</h1>
 
-    <form asp-action="Create" method="post">
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
 
         <div class="mb-3">
             <label asp-for="Title" class="form-label"></label>
@@ -60,6 +60,18 @@
 
             <span asp-validation-for="SecurityOfficerId"
                   class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Incident Image</label>
+            <input type="file"
+                   name="imageFile"
+                   class="form-control"
+                   accept=".jpg,.jpeg,.png" />
+
+            <span class="text-danger">
+                @Html.ValidationMessage("imageFile")
+            </span>
         </div>
 
         <button type="submit" class="btn btn-primary">

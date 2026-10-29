@@ -19,14 +19,14 @@ namespace WebApplication3.Application.Services
         {
             var officers = await _unitOfWork.SecurityOfficerRepository
                 .GetAllSecurityOfficersAsync();
-
             return officers.Select(officer => new SecurityOfficerDto
             {
                 Id = officer.Id,
                 Name = officer.Name,
                 EmployeeNumber = officer.EmployeeNumber,
                 Shift = officer.Shift,
-                Phone = officer.Phone
+                Phone = officer.Phone,
+                ImageUrl = officer.ImageUrl
             });
         }
 
@@ -47,7 +47,8 @@ namespace WebApplication3.Application.Services
                 Name = officer.Name,
                 EmployeeNumber = officer.EmployeeNumber,
                 Shift = officer.Shift,
-                Phone = officer.Phone
+                Phone = officer.Phone,
+                ImageUrl = officer.ImageUrl
             };
         }
 
@@ -59,7 +60,8 @@ namespace WebApplication3.Application.Services
                 Name = officerDTO.Name,
                 EmployeeNumber = officerDTO.EmployeeNumber,
                 Shift = officerDTO.Shift,
-                Phone = officerDTO.Phone
+                Phone = officerDTO.Phone,
+                ImageUrl = officerDTO.ImageUrl
             };
 
             await _unitOfWork.SecurityOfficerRepository
@@ -81,6 +83,7 @@ namespace WebApplication3.Application.Services
             officer.EmployeeNumber = officerDTO.EmployeeNumber;
             officer.Shift = officerDTO.Shift;
             officer.Phone = officerDTO.Phone;
+            officer.ImageUrl = officerDTO.ImageUrl;
 
             await _unitOfWork.SecurityOfficerRepository
                 .UpdateSecurityOfficerAsync(officer);

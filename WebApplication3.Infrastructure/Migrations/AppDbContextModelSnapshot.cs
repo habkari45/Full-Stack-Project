@@ -22,7 +22,7 @@ namespace WebApplication3.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("WebApplication3.Models.SecurityIncident", b =>
+            modelBuilder.Entity("WebApplication3.Domain.Models.SecurityIncident", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -32,6 +32,9 @@ namespace WebApplication3.Infrastructure.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("IncidentDate")
@@ -70,7 +73,7 @@ namespace WebApplication3.Infrastructure.Migrations
                     b.ToTable("SecurityIncidents");
                 });
 
-            modelBuilder.Entity("WebApplication3.Models.SecurityOfficer", b =>
+            modelBuilder.Entity("WebApplication3.Domain.Models.SecurityOfficer", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -80,6 +83,9 @@ namespace WebApplication3.Infrastructure.Migrations
 
                     b.Property<string>("EmployeeNumber")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -106,7 +112,7 @@ namespace WebApplication3.Infrastructure.Migrations
                     b.ToTable("SecurityOfficers");
                 });
 
-            modelBuilder.Entity("WebApplication3.Models.User", b =>
+            modelBuilder.Entity("WebApplication3.Domain.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -116,6 +122,9 @@ namespace WebApplication3.Infrastructure.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsLocked")
@@ -138,16 +147,16 @@ namespace WebApplication3.Infrastructure.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("WebApplication3.Models.SecurityIncident", b =>
+            modelBuilder.Entity("WebApplication3.Domain.Models.SecurityIncident", b =>
                 {
-                    b.HasOne("WebApplication3.Models.SecurityOfficer", "SecurityOfficer")
+                    b.HasOne("WebApplication3.Domain.Models.SecurityOfficer", "SecurityOfficer")
                         .WithMany("SecurityIncidents")
                         .HasForeignKey("SecurityOfficerId");
 
                     b.Navigation("SecurityOfficer");
                 });
 
-            modelBuilder.Entity("WebApplication3.Models.SecurityOfficer", b =>
+            modelBuilder.Entity("WebApplication3.Domain.Models.SecurityOfficer", b =>
                 {
                     b.Navigation("SecurityIncidents");
                 });

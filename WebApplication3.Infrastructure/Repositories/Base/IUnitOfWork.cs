@@ -7,5 +7,7 @@ namespace WebApplication3.Infrastructure.Repositories.Base
         ISecurityIncidentRepository SecurityIncidentRepository { get; }
 
         ISecurityOfficerRepository SecurityOfficerRepository { get; }
+
+        IUserRepository UserRepository { get; }
     }
 }

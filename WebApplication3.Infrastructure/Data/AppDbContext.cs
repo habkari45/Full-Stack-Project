@@ -14,5 +14,18 @@ namespace WebApplication3.Infrastructure.Data
         public DbSet<SecurityOfficer> SecurityOfficers { get; set; }
         public DbSet<User> Users { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<SecurityOfficer>()
+                .HasIndex(x => x.Uuid)
+                .IsUnique();
+
+            modelBuilder.Entity<SecurityIncident>()
+                .HasIndex(x => x.Uuid)
+                .IsUnique();
+        }
+
     }
 }

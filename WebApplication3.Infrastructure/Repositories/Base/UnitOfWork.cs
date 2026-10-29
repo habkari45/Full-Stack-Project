@@ -13,10 +13,13 @@ namespace WebApplication3.Infrastructure.Repositories.Base
 
             SecurityIncidentRepository = new SecurityIncidentRepository(_db);
             SecurityOfficerRepository = new SecurityOfficerRepository(_db);
+            UserRepository = new UserRepository(_db);
         }
 
         public ISecurityIncidentRepository SecurityIncidentRepository { get; }
 
         public ISecurityOfficerRepository SecurityOfficerRepository { get; }
+
+        public IUserRepository UserRepository { get; }
     }
 }

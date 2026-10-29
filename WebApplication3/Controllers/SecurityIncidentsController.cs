@@ -10,11 +10,14 @@ namespace WebApplication3.Controllers
     public class SecurityIncidentsController : Controller
     {
         private readonly ISecurityIncidentService _securityIncidentService;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
         public SecurityIncidentsController(
-            ISecurityIncidentService securityIncidentService)
+         ISecurityIncidentService securityIncidentService,
+          IWebHostEnvironment webHostEnvironment)
         {
             _securityIncidentService = securityIncidentService;
+            _webHostEnvironment = webHostEnvironment;
         }
 
 
@@ -48,27 +51,73 @@ namespace WebApplication3.Controllers
             return View();
         }
 
-
         // CREATE POST
         [HttpPost]
         public async Task<IActionResult> Create(
-            SecurityIncidentCreateDto incidentDTO)
+            SecurityIncidentCreateDto incidentDTO,
+            IFormFile? imageFile)
         {
-            if (ModelState.IsValid)
+            if (imageFile != null && imageFile.Length > 0)
             {
-                await _securityIncidentService
-                    .AddSecurityIncident(incidentDTO);
+                // Validate image size (5 MB)
+                if (imageFile.Length > 5 * 1024 * 1024)
+                {
+                    ModelState.AddModelError("imageFile",
+                        "Image size must not exceed 5 MB.");
+                }
 
-                return RedirectToAction("Index");
+                // Validate image extension
+                var extension = Path.GetExtension(imageFile.FileName)
+                    .ToLowerInvariant();
+
+                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+
+                if (!allowedExtensions.Contains(extension))
+                {
+                    ModelState.AddModelError("imageFile",
+                        "Only JPG, JPEG and PNG images are allowed.");
+                }
             }
 
-            ModelState.AddModelError(
-                "",
-                "Please fill in all required fields.");
+            if (!ModelState.IsValid)
+            {
+                await loadSecurityOfficers();
 
-            await loadSecurityOfficers();
+                return View(incidentDTO);
+            }
 
-            return View(incidentDTO);
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                var webRootPath = _webHostEnvironment.WebRootPath
+                    ?? Path.Combine(
+                        _webHostEnvironment.ContentRootPath,
+                        "wwwroot");
+
+                var folderPath = Path.Combine(
+                    webRootPath, "images", "incidents");
+
+                Directory.CreateDirectory(folderPath);
+
+                var extension = Path.GetExtension(imageFile.FileName)
+                    .ToLowerInvariant();
+
+                var fileName = $"{Guid.NewGuid()}{extension}";
+
+                var filePath = Path.Combine(folderPath, fileName);
+
+                using (var stream = new FileStream(
+                    filePath, FileMode.CreateNew))
+                {
+                    await imageFile.CopyToAsync(stream);
+                }
+
+                incidentDTO.ImageUrl = $"/images/incidents/{fileName}";
+            }
+
+            await _securityIncidentService
+                .AddSecurityIncident(incidentDTO);
+
+            return RedirectToAction("Index");
         }
 
 
@@ -99,30 +148,89 @@ namespace WebApplication3.Controllers
         // EDIT POST
         [HttpPost]
         public async Task<IActionResult> Edit(
-            SecurityIncidentUpdateDto incidentDTO)
+            SecurityIncidentUpdateDto incidentDTO,
+            IFormFile? imageFile)
         {
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    await _securityIncidentService
-                        .UpdateSecurityIncident(incidentDTO);
-                }
-                catch (KeyNotFoundException)
-                {
-                    return NotFound();
-                }
+            // Get current incident
+            var existingIncident = await _securityIncidentService
+                .GetSecurityIncidentById(incidentDTO.Id);
 
-                return RedirectToAction("Index");
+            if (existingIncident == null)
+            {
+                return NotFound();
             }
 
-            ModelState.AddModelError(
-                "",
-                "Please fill all the required fields.");
+            // Keep the current image
+            incidentDTO.ImageUrl = existingIncident.ImageUrl;
 
-            await loadSecurityOfficers();
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                // Validate image size (5 MB)
+                if (imageFile.Length > 5 * 1024 * 1024)
+                {
+                    ModelState.AddModelError("imageFile",
+                        "Image size must not exceed 5 MB.");
+                }
 
-            return View(incidentDTO);
+                // Validate image extension
+                var extension = Path.GetExtension(imageFile.FileName)
+                    .ToLowerInvariant();
+
+                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+
+                if (!allowedExtensions.Contains(extension))
+                {
+                    ModelState.AddModelError("imageFile",
+                        "Only JPG, JPEG and PNG images are allowed.");
+                }
+            }
+
+            if (!ModelState.IsValid)
+            {
+                await loadSecurityOfficers();
+
+                return View(incidentDTO);
+            }
+
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                var webRootPath = _webHostEnvironment.WebRootPath
+                    ?? Path.Combine(
+                        _webHostEnvironment.ContentRootPath,
+                        "wwwroot");
+
+                var folderPath = Path.Combine(
+                    webRootPath, "images", "incidents");
+
+                Directory.CreateDirectory(folderPath);
+
+                var extension = Path.GetExtension(imageFile.FileName)
+                    .ToLowerInvariant();
+
+                var fileName = $"{Guid.NewGuid()}{extension}";
+
+                var filePath = Path.Combine(folderPath, fileName);
+
+                using (var stream = new FileStream(
+                    filePath, FileMode.CreateNew))
+                {
+                    await imageFile.CopyToAsync(stream);
+                }
+
+                incidentDTO.ImageUrl = $"/images/incidents/{fileName}";
+            }
+
+            try
+            {
+                await _securityIncidentService
+                    .UpdateSecurityIncident(incidentDTO);
+            }
+            catch (KeyNotFoundException)
+            {
+                return NotFound();
+            }
+
+            return RedirectToAction("Index");
         }
 
 

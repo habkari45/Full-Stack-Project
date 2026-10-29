@@ -19,7 +19,6 @@ namespace WebApplication3.Application.Services
         {
             var incidents = await _unitOfWork.SecurityIncidentRepository
                 .GetAllSecurityIncidentsAsync();
-
             return incidents.Select(incident => new SecurityIncidentDto
             {
                 Id = incident.Id,
@@ -29,7 +28,8 @@ namespace WebApplication3.Application.Services
                 IncidentDate = incident.IncidentDate,
                 Status = incident.Status,
                 Description = incident.Description,
-                SecurityOfficerName = incident.SecurityOfficer?.Name ?? string.Empty
+                SecurityOfficerName = incident.SecurityOfficer?.Name ?? string.Empty,
+                ImageUrl = incident.ImageUrl
             });
         }
 
@@ -53,7 +53,8 @@ namespace WebApplication3.Application.Services
                 IncidentDate = incident.IncidentDate,
                 Status = incident.Status,
                 Description = incident.Description,
-                SecurityOfficerId = incident.SecurityOfficerId
+                SecurityOfficerId = incident.SecurityOfficerId,
+                ImageUrl = incident.ImageUrl
             };
         }
 
@@ -75,7 +76,8 @@ namespace WebApplication3.Application.Services
                 IncidentDate = incidentDTO.IncidentDate,
                 Status = incidentDTO.Status,
                 Description = incidentDTO.Description,
-                SecurityOfficerId = incidentDTO.SecurityOfficerId
+                SecurityOfficerId = incidentDTO.SecurityOfficerId,
+                ImageUrl = incidentDTO.ImageUrl
             };
 
             await _unitOfWork.SecurityIncidentRepository
@@ -100,6 +102,7 @@ namespace WebApplication3.Application.Services
             incident.Status = incidentDTO.Status;
             incident.Description = incidentDTO.Description;
             incident.SecurityOfficerId = incidentDTO.SecurityOfficerId;
+            incident.ImageUrl = incidentDTO.ImageUrl;
 
             await _unitOfWork.SecurityIncidentRepository
                 .UpdateSecurityIncidentAsync(incident);

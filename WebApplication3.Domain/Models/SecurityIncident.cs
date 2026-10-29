@@ -1,10 +1,8 @@
-﻿
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication3.Domain.Models
 {
-    
     public class SecurityIncident
     {
         [Key]
@@ -35,6 +33,8 @@ namespace WebApplication3.Domain.Models
         [DisplayName("Description")]
         [Required(ErrorMessage = "Description is required.")]
         public string Description { get; set; }
+
+        public string? ImageUrl { get; set; }
 
         public int? SecurityOfficerId { get; set; }
 
