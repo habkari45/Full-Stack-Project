@@ -66,11 +66,10 @@ namespace WebApplication3.Application.Services
 
             var newUser = new User
             {
-                Name = registerDto.Name,
+                Gender = registerDto.Gender,
                 UserName = registerDto.Username,
                 Email = registerDto.Email,
                 Password = hashedPassword,
-                ImageUrl = registerDto.ImageUrl
             };
 
             _unitOfWork.UserRepository.Add(newUser);

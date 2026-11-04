@@ -1,0 +1,62 @@
+﻿@using WebApplication3.Application.DTOs
+@model IEnumerable<CategoryDto>
+
+<div class="container">
+
+    <h1>Categories</h1>
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["ErrorMessage"]
+        </div>
+    }
+
+    <a asp-action="Create" class="btn btn-primary mb-3">
+        Create Category
+    </a>
+
+    <a asp-controller="Products"
+       asp-action="Index"
+       class="btn btn-secondary mb-3">
+        Products
+    </a>
+
+    <table class="table table-bordered table-striped">
+
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Category Name</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var category in Model)
+            {
+                <tr>
+                    <td>@category.Id</td>
+
+                    <td>@category.Name</td>
+
+                    <td>
+                        <a asp-action="Edit"
+                           asp-route-id="@category.Id"
+                           class="btn btn-warning btn-sm">
+                            Edit
+                        </a>
+
+                        <a asp-action="Delete"
+                           asp-route-id="@category.Id"
+                           class="btn btn-danger btn-sm">
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+</div>

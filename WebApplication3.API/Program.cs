@@ -16,15 +16,25 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// REPOSITORIES
 builder.Services.AddScoped<ISecurityIncidentRepository, SecurityIncidentRepository>();
 builder.Services.AddScoped<ISecurityOfficerRepository, SecurityOfficerRepository>();
 
+// UNIT OF WORK
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+// SECURITY SERVICES
 builder.Services.AddScoped<ISecurityIncidentService, SecurityIncidentService>();
 builder.Services.AddScoped<ISecurityOfficerService, SecurityOfficerService>();
 
+// USER SERVICE
 builder.Services.AddScoped<IUserService, UserService>();
+
+// PRODUCT SERVICE
+builder.Services.AddScoped<IProductService, ProductService>();
+
+// CATEGORY SERVICE
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 var app = builder.Build();
 

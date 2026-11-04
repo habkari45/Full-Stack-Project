@@ -9,13 +9,12 @@ namespace WebApplication3.Application.DTOs
 
         public string Password { get; set; }
 
-        public IFormFile? ImageFile { get; set; }
-
+       
     }
 
     public class RegisterDto
     {
-        public string Name { get; set; }
+        public string Gender { get; set; }
 
         public string Username { get; set; }
 
@@ -23,10 +22,10 @@ namespace WebApplication3.Application.DTOs
 
         public string Password { get; set; }
 
-        public IFormFile? ImageFile { get; set; }
+        //public IFormFile? ImageFile { get; set; }
 
-        [JsonIgnore]
-        public string? ImageUrl { get; set; }
+        //[JsonIgnore]
+        //public string? ImageUrl { get; set; }
 
 
     }

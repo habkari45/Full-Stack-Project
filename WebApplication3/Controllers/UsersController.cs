@@ -62,7 +62,7 @@ namespace WebApplication3.Controllers
                 return NotFound();
             }
 
-            userFromDb.Name = user.Name;
+            //userFromDb.Name = user.Name;
             userFromDb.UserName = user.UserName;
             userFromDb.Email = user.Email;
             userFromDb.IsLocked = user.IsLocked;

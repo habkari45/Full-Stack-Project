@@ -25,9 +25,18 @@ builder.Services.AddAuthentication(
 builder.Services.AddScoped<ISecurityIncidentRepository, SecurityIncidentRepository>();
 builder.Services.AddScoped<ISecurityOfficerRepository, SecurityOfficerRepository>();
 
+// Product and Category Repositories
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 builder.Services.AddScoped<ISecurityIncidentService, SecurityIncidentService>();
 builder.Services.AddScoped<ISecurityOfficerService, SecurityOfficerService>();
+
+// Product and Category Services
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 var app = builder.Build();
 
