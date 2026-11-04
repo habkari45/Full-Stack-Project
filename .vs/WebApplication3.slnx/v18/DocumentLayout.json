@@ -1,0 +1,857 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2B17C0F2-3CFC-4AC1-BDCE-F0B5DA1243AB}|WebApplication3.API\\WebApplication3.API.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B17C0F2-3CFC-4AC1-BDCE-F0B5DA1243AB}|WebApplication3.API\\WebApplication3.API.csproj|solutionrelative:webapplication3.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B17C0F2-3CFC-4AC1-BDCE-F0B5DA1243AB}|WebApplication3.API\\WebApplication3.API.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B17C0F2-3CFC-4AC1-BDCE-F0B5DA1243AB}|WebApplication3.API\\WebApplication3.API.csproj|solutionrelative:webapplication3.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B17C0F2-3CFC-4AC1-BDCE-F0B5DA1243AB}|WebApplication3.API\\WebApplication3.API.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B17C0F2-3CFC-4AC1-BDCE-F0B5DA1243AB}|WebApplication3.API\\WebApplication3.API.csproj|solutionrelative:webapplication3.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\dtos\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\dtos\\productupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\dtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\dtos\\productcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\dtos\\categoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\dtos\\categoryupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\dtos\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\dtos\\categorycreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B17C0F2-3CFC-4AC1-BDCE-F0B5DA1243AB}|WebApplication3.API\\WebApplication3.API.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B17C0F2-3CFC-4AC1-BDCE-F0B5DA1243AB}|WebApplication3.API\\WebApplication3.API.csproj|solutionrelative:webapplication3.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\services\\base\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\services\\base\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\services\\base\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\services\\base\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\views\\products\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\controllers\\productsconroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\controllers\\productsconroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3\\controllers\\securityofficerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD3349A6-B1F8-5B68-042D-12A657A15BC3}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\controllers\\securityofficerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\dtos\\securityofficerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\dtos\\securityofficerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\repositories\\base\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\repositories\\base\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\repositories\\base\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\repositories\\base\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\repositories\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\repositories\\securityofficerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\repositories\\securityofficerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\migrations\\20261101213803_addproductsandcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\migrations\\20261101213803_addproductsandcategories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C2528C-4B58-4531-8A83-F158092933A2}|WebApplication3.Domain\\WebApplication3.Domain.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.domain\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C2528C-4B58-4531-8A83-F158092933A2}|WebApplication3.Domain\\WebApplication3.Domain.csproj|solutionrelative:webapplication3.domain\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C2528C-4B58-4531-8A83-F158092933A2}|WebApplication3.Domain\\WebApplication3.Domain.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.domain\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C2528C-4B58-4531-8A83-F158092933A2}|WebApplication3.Domain\\WebApplication3.Domain.csproj|solutionrelative:webapplication3.domain\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27C2528C-4B58-4531-8A83-F158092933A2}|WebApplication3.Domain\\WebApplication3.Domain.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.domain\\models\\securityincident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27C2528C-4B58-4531-8A83-F158092933A2}|WebApplication3.Domain\\WebApplication3.Domain.csproj|solutionrelative:webapplication3.domain\\models\\securityincident.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\migrations\\20261101181944_renameusernametogender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\migrations\\20261101181944_renameusernametogender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B17C0F2-3CFC-4AC1-BDCE-F0B5DA1243AB}|WebApplication3.API\\WebApplication3.API.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2B17C0F2-3CFC-4AC1-BDCE-F0B5DA1243AB}|WebApplication3.API\\WebApplication3.API.csproj|solutionrelative:webapplication3.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\dtos\\securityincidentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\dtos\\securityincidentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.application\\services\\base\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF14AAEB-E95D-4AAD-A62A-D03EE4D0B478}|WebApplication3.Application\\WebApplication3.Application.csproj|solutionrelative:webapplication3.application\\services\\base\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|c:\\users\\lenovo\\source\\repos\\webapplication3\\webapplication3.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{864EA99B-BC1C-40D9-ABAB-3ACD2D787B18}|WebApplication3.Infrastructure\\WebApplication3.Infrastructure.csproj|solutionrelative:webapplication3.infrastructure\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c6f34f0d-7ae5-4f3a-be61-fe0c21ae9eb8}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication3\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication3\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAAwAUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-02T18:54:08.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.API\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication3.API\\Program.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.API\\Program.cs",
+              "RelativeToolTip": "WebApplication3.API\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAADYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T17:22:10.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.API\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "WebApplication3.API\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.API\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "WebApplication3.API\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAuwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T17:36:43.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "WebApplication3.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "WebApplication3.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAwEwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T17:34:51.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\CategoryDto.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\DTOs\\CategoryDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\CategoryDto.cs",
+              "RelativeToolTip": "WebApplication3.Application\\DTOs\\CategoryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:12:34.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\CategoryCreateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\DTOs\\CategoryCreateDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\CategoryCreateDto.cs",
+              "RelativeToolTip": "WebApplication3.Application\\DTOs\\CategoryCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:13:24.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\CategoryUpdateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\DTOs\\CategoryUpdateDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\CategoryUpdateDto.cs",
+              "RelativeToolTip": "WebApplication3.Application\\DTOs\\CategoryUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:14:51.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\ProductDto.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\DTOs\\ProductDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\ProductDto.cs",
+              "RelativeToolTip": "WebApplication3.Application\\DTOs\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:08:31.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductCreateDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\ProductCreateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\DTOs\\ProductCreateDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\ProductCreateDto.cs",
+              "RelativeToolTip": "WebApplication3.Application\\DTOs\\ProductCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:09:55.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\ProductUpdateDto.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\DTOs\\ProductUpdateDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\ProductUpdateDto.cs",
+              "RelativeToolTip": "WebApplication3.Application\\DTOs\\ProductUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:11:16.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.API\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "WebApplication3.API\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.API\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "WebApplication3.API\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAAwF4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T18:01:14.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\Services\\Base\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\Services\\Base\\ICategoryService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\Services\\Base\\ICategoryService.cs",
+              "RelativeToolTip": "WebApplication3.Application\\Services\\Base\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:18:01.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\Services\\Base\\IProductService.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\Services\\Base\\IProductService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\Services\\Base\\IProductService.cs",
+              "RelativeToolTip": "WebApplication3.Application\\Services\\Base\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:16:26.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\Services\\CategoryService.cs",
+              "RelativeToolTip": "WebApplication3.Application\\Services\\CategoryService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAAAFsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:20:57.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "WebApplication3.Application\\Services\\ProductService.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAHkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:19:10.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Categories\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebApplication3\\Views\\Categories\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Categories\\Delete.cshtml",
+              "RelativeToolTip": "WebApplication3\\Views\\Categories\\Delete.cshtml",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-01T22:47:13.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication3\\Views\\Products\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "WebApplication3\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAwDcAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-01T22:38:04.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebApplication3\\Views\\Products\\Create.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "WebApplication3\\Views\\Products\\Create.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-01T22:38:56.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Products\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebApplication3\\Views\\Products\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Products\\Edit.cshtml",
+              "RelativeToolTip": "WebApplication3\\Views\\Products\\Edit.cshtml",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAwD4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-01T22:39:25.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Products\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebApplication3\\Views\\Products\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Products\\Delete.cshtml",
+              "RelativeToolTip": "WebApplication3\\Views\\Products\\Delete.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-01T22:40:00.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication3\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "WebApplication3\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAwCgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-01T22:45:50.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "WebApplication3\\Views\\Categories\\Create.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Categories\\Create.cshtml",
+              "RelativeToolTip": "WebApplication3\\Views\\Categories\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwBQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-01T22:46:31.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "WebApplication3\\Views\\Categories\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Views\\Categories\\Edit.cshtml",
+              "RelativeToolTip": "WebApplication3\\Views\\Categories\\Edit.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-01T22:46:52.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "WebApplication3\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAAwIsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:33:44.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ProductsConroller.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Controllers\\ProductsConroller.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Controllers\\ProductsConroller.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Controllers\\ProductsConroller.cs",
+              "RelativeToolTip": "WebApplication3\\Controllers\\ProductsConroller.cs",
+              "ViewState": "AgIAANwAAAAAAAAAAAAxwPoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:32:00.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Program.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Program.cs",
+              "RelativeToolTip": "WebApplication3\\Program.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAwDwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T22:27:58.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SecurityOfficersController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Controllers\\SecurityOfficersController.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Controllers\\SecurityOfficersController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3\\Controllers\\SecurityOfficersController.cs",
+              "RelativeToolTip": "WebApplication3\\Controllers\\SecurityOfficersController.cs",
+              "ViewState": "AgIAANQAAAAAAAAAAAAAAPEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T17:14:38.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwCIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T21:53:28.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAwCkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T21:50:16.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Repositories\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Repositories\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T21:49:01.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\Base\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Repositories\\Base\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\Base\\IUnitOfWork.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Repositories\\Base\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T17:17:33.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\Base\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Repositories\\Base\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\Base\\UnitOfWork.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Repositories\\Base\\UnitOfWork.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAxwBoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T21:25:28.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SecurityOfficerDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\SecurityOfficerDto.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\DTOs\\SecurityOfficerDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\SecurityOfficerDto.cs",
+              "RelativeToolTip": "WebApplication3.Application\\DTOs\\SecurityOfficerDto.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAADwvyMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T17:20:10.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Repositories\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\ICategoryRepository.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Repositories\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T21:52:02.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SecurityOfficerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\SecurityOfficerRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Repositories\\SecurityOfficerRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\SecurityOfficerRepository.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Repositories\\SecurityOfficerRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAuwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T21:44:18.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20261101213803_AddProductsAndCategories.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Migrations\\20261101213803_AddProductsAndCategories.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Migrations\\20261101213803_AddProductsAndCategories.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Migrations\\20261101213803_AddProductsAndCategories.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Migrations\\20261101213803_AddProductsAndCategories.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADcAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T21:38:03.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA9wCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T21:23:22.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Domain\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Domain\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Domain\\Models\\Product.cs",
+              "RelativeToolTip": "WebApplication3.Domain\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T21:29:35.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Domain\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Domain\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Domain\\Models\\Category.cs",
+              "RelativeToolTip": "WebApplication3.Domain\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T21:27:53.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "SecurityIncident.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Domain\\Models\\SecurityIncident.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Domain\\Models\\SecurityIncident.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Domain\\Models\\SecurityIncident.cs",
+              "RelativeToolTip": "WebApplication3.Domain\\Models\\SecurityIncident.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T21:22:19.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "20261101181944_RenameUserNameToGender.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Migrations\\20261101181944_RenameUserNameToGender.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Migrations\\20261101181944_RenameUserNameToGender.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Migrations\\20261101181944_RenameUserNameToGender.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Migrations\\20261101181944_RenameUserNameToGender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T18:19:44.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebApplication3.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebApplication3.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-01T17:54:49.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\DTOs\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "WebApplication3.Application\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAmwAsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T17:20:01.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "SecurityIncidentDto.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\SecurityIncidentDto.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\DTOs\\SecurityIncidentDto.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\DTOs\\SecurityIncidentDto.cs",
+              "RelativeToolTip": "WebApplication3.Application\\DTOs\\SecurityIncidentDto.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T17:20:03.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAvwKMAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T18:14:04.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\Services\\UserService.cs",
+              "RelativeToolTip": "WebApplication3.Application\\Services\\UserService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwE8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T17:18:22.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\Services\\Base\\IUserService.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Application\\Services\\Base\\IUserService.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Application\\Services\\Base\\IUserService.cs",
+              "RelativeToolTip": "WebApplication3.Application\\Services\\Base\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T17:18:33.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T17:17:41.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication3.Infrastructure\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\WebApplication3\\WebApplication3.Infrastructure\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "WebApplication3.Infrastructure\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T17:17:36.413Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
