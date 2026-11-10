@@ -1,7 +1,7 @@
 ﻿using WebApplication3.Infrastructure.Data;
-using WebApplication3.Infrastructure.Repositories;
+using WebApplication3.Infrastructure.Repositories.Base;
 
-namespace WebApplication3.Infrastructure.Repositories.Base
+namespace WebApplication3.Infrastructure.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
@@ -11,30 +11,75 @@ namespace WebApplication3.Infrastructure.Repositories.Base
         {
             _db = db;
 
-            SecurityIncidentRepository =
-                new SecurityIncidentRepository(_db);
-
+            // SECURITY OFFICER
             SecurityOfficerRepository =
                 new SecurityOfficerRepository(_db);
 
+            // SECURITY INCIDENT
+            SecurityIncidentRepository =
+                new SecurityIncidentRepository(_db);
+
+            // USER
             UserRepository =
                 new UserRepository(_db);
 
+            // PRODUCT
             ProductRepository =
                 new ProductRepository(_db);
 
+            // CATEGORY
             CategoryRepository =
                 new CategoryRepository(_db);
+
+            // CART
+            CartRepository =
+                new CartRepository(_db);
+
+            // ORDER
+            OrderRepo =
+                new OrderRepository(_db);
         }
 
-        public ISecurityIncidentRepository SecurityIncidentRepository { get; }
+        // SECURITY OFFICER
+        public ISecurityOfficerRepository SecurityOfficerRepository
+        {
+            get;
+        }
 
-        public ISecurityOfficerRepository SecurityOfficerRepository { get; }
+        // SECURITY INCIDENT
+        public ISecurityIncidentRepository SecurityIncidentRepository
+        {
+            get;
+        }
 
-        public IUserRepository UserRepository { get; }
+        // USER
+        public IUserRepository UserRepository
+        {
+            get;
+        }
 
-        public IProductRepository ProductRepository { get; }
+        // PRODUCT
+        public IProductRepository ProductRepository
+        {
+            get;
+        }
 
-        public ICategoryRepository CategoryRepository { get; }
+        // CATEGORY
+        public ICategoryRepository CategoryRepository
+        {
+            get;
+        }
+
+        // CART
+        public ICartRepository CartRepository
+        {
+            get;
+        }
+
+        // ORDER
+        public IOrderRepository OrderRepo
+        {
+            get;
+        }
     }
 }

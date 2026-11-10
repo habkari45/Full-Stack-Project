@@ -20,6 +20,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ISecurityIncidentRepository, SecurityIncidentRepository>();
 builder.Services.AddScoped<ISecurityOfficerRepository, SecurityOfficerRepository>();
 
+// CART REPOSITORY
+builder.Services.AddScoped<ICartRepository, CartRepository>();
+
 // UNIT OF WORK
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
@@ -35,6 +38,11 @@ builder.Services.AddScoped<IProductService, ProductService>();
 
 // CATEGORY SERVICE
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+
+// CART SERVICE
+builder.Services.AddScoped<ICartService, CartService>();
+
+builder.Services.AddScoped<IOrderService, OrderService>();
 
 var app = builder.Build();
 

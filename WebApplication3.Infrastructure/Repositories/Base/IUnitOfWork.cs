@@ -13,5 +13,8 @@ namespace WebApplication3.Infrastructure.Repositories.Base
         IProductRepository ProductRepository { get; }
 
         ICategoryRepository CategoryRepository { get; }
+
+        ICartRepository CartRepository { get; }
+        IOrderRepository OrderRepo { get; }
     }
 }
