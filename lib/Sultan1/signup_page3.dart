@@ -1,0 +1,261 @@
+import 'package:flutter/material.dart';
+
+import 'Data/UserService.dart';
+import 'login_Page3.dart';
+
+class Signupscreen extends StatefulWidget {
+  const Signupscreen({super.key});
+
+  @override
+  State<Signupscreen> createState() => _SignupscreenState();
+}
+
+class _SignupscreenState extends State<Signupscreen> {
+
+  final gendercontroller = TextEditingController();
+  final emailcontroller = TextEditingController();
+  final usernamecontroller = TextEditingController();
+  final passwordcontroller = TextEditingController();
+
+  final formKey = GlobalKey<FormState>();
+
+  final UserService userService = UserService();
+
+  bool isLoading = false;
+
+  void register() async {
+
+    if (!formKey.currentState!.validate()) {
+      return;
+    }
+
+    setState(() {
+      isLoading = true;
+    });
+
+    try {
+
+      final user = await userService.register(
+        gendercontroller.text.trim(),
+        emailcontroller.text.trim(),
+        usernamecontroller.text.trim(),
+        passwordcontroller.text,
+      );
+
+      if (!mounted) return;
+
+      if (user != null) {
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Registration Successful'),
+            backgroundColor: Colors.green,
+          ),
+        );
+
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const Loginscreen3(),
+          ),
+        );
+
+      } else {
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: const Text('Username or Email already exists'),
+            behavior: SnackBarBehavior.floating,
+            duration: const Duration(seconds: 3),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(20),
+            ),
+            backgroundColor: Colors.red,
+          ),
+        );
+      }
+
+    } catch (e) {
+
+      if (!mounted) return;
+
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Error: $e'),
+          backgroundColor: Colors.red,
+        ),
+      );
+
+    } finally {
+
+      if (mounted) {
+        setState(() {
+          isLoading = false;
+        });
+      }
+    }
+  }
+
+  @override
+  void dispose() {
+    gendercontroller.dispose();
+    emailcontroller.dispose();
+    usernamecontroller.dispose();
+    passwordcontroller.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+
+    return Scaffold(
+
+      appBar: AppBar(
+        title: const Text('Signup Screen'),
+        backgroundColor: Colors.indigo,
+      ),
+
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16),
+
+          child: Form(
+            key: formKey,
+
+            child: Column(
+              children: [
+
+                const SizedBox(height: 30),
+
+                const Icon(
+                  Icons.person_add,
+                  size: 100,
+                  color: Colors.indigo,
+                ),
+
+                const SizedBox(height: 30),
+
+                TextFormField(
+                  controller: gendercontroller,
+
+                  decoration: const InputDecoration(
+                    labelText: 'Gender',
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.person),
+                  ),
+
+                  validator: (value) {
+                    if (value == null || value.trim().isEmpty) {
+                      return 'Please enter your gender';
+                    }
+                    return null;
+                  },
+                ),
+
+                const SizedBox(height: 20),
+
+                TextFormField(
+                  controller: emailcontroller,
+                  keyboardType: TextInputType.emailAddress,
+
+                  decoration: const InputDecoration(
+                    labelText: 'Email',
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.email),
+                  ),
+
+                  validator: (value) {
+                    if (value == null || value.trim().isEmpty) {
+                      return 'Please enter your email';
+                    }
+
+                    if (!RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$')
+                        .hasMatch(value.trim())) {
+                      return 'Please enter a valid email';
+                    }
+
+                    return null;
+                  },
+                ),
+
+                const SizedBox(height: 20),
+
+                TextFormField(
+                  controller: usernamecontroller,
+
+                  decoration: const InputDecoration(
+                    labelText: 'Username',
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.account_circle),
+                  ),
+
+                  validator: (value) {
+                    if (value == null || value.trim().isEmpty) {
+                      return 'Please enter username';
+                    }
+                    return null;
+                  },
+                ),
+
+                const SizedBox(height: 20),
+
+                TextFormField(
+                  controller: passwordcontroller,
+                  obscureText: true,
+
+                  decoration: const InputDecoration(
+                    labelText: 'Password',
+                    border: OutlineInputBorder(),
+                    prefixIcon: Icon(Icons.lock),
+                  ),
+
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Please enter password';
+                    }
+
+                    if (value.length < 6) {
+                      return 'Password must be at least 6 characters';
+                    }
+
+                    return null;
+                  },
+                ),
+
+                const SizedBox(height: 30),
+
+                ElevatedButton(
+                  onPressed: isLoading ? null : register,
+
+                  child: isLoading
+                      ? const CircularProgressIndicator()
+                      : const Text('Register'),
+                ),
+
+                const SizedBox(height: 20),
+
+                TextButton(
+                  onPressed: () {
+
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                        const Loginscreen3(),
+                      ),
+                    );
+
+                  },
+
+                  child: const Text(
+                    'Already have an account? Login',
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

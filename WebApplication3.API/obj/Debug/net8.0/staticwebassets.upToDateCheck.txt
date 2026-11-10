@@ -1,3 +1,0 @@
-wwwroot\images\users\88bcc4af-6d62-4c52-aed6-187c8f07c76d.png
-wwwroot\images\users\9386b46e-aa8d-433d-b9fe-74360cd27d52.png
-wwwroot\images\users\e4957a60-ac15-4b87-becb-7a01aa5e5cce.jpg
